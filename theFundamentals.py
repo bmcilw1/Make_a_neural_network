@@ -1,6 +1,5 @@
 from numpy import exp, array, random, dot
 
-
 class NeuralNetwork():
     def __init__(self):
         # Seed the random number generator, so it generates the same numbers
@@ -47,7 +46,6 @@ class NeuralNetwork():
     def think(self, inputs):
         # Pass inputs through our neural network (our single neuron).
         return self.__sigmoid(dot(inputs, self.synaptic_weights))
-
 
 if __name__ == "__main__":
 
